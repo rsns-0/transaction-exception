@@ -1,0 +1,13 @@
+{
+  "name": "transaction-exception",
+  "version": "1.0.0",
+  "description": "Utility class which holds type information of the data object contained within an Exception. Useful for handling business logic related exceptions.",
+  "main": "index.js",
+  "repository": "https://github.com/rsns-0/transaction-exception",
+  "author": "rsns-0",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
