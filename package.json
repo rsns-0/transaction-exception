@@ -1,13 +1,22 @@
 {
-  "name": "transaction-exception",
-  "version": "1.0.0",
-  "description": "Utility class which holds type information of the data object contained within an Exception. Useful for handling business logic related exceptions.",
-  "main": "index.js",
-  "repository": "https://github.com/rsns-0/transaction-exception",
-  "author": "rsns-0",
-  "license": "MIT",
-  "private": false,
-  "devDependencies": {
-    "typescript": "^5.2.2"
-  }
+	"name": "transaction-exception",
+	"version": "1.0.0",
+	"description": "Utility class which holds type information of the data object contained within an Exception. Useful for handling business logic related exceptions.",
+	"repository": "https://github.com/rsns-0/transaction-exception",
+	"author": "rsns-0",
+	"license": "MIT",
+	"private": false,
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup index.ts --format cjs,esm --dts",
+		"release": "yarn build && changeset publish",
+		"lint": "tsc"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.26.0",
+		"tsup": "^6.5.0",
+		"typescript": "^5.2.2"
+	}
 }
